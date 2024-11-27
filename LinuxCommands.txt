@@ -1,0 +1,4 @@
+1. ls - Used to list the contents of the folder.
+2. pwd- Check the current path of the directory.
+3. cd - Used to navigate between the directories.
+4. mkdir - Used to create one or multiple directories.
