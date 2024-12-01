@@ -1,0 +1,61 @@
+Window Commands / Power Shell Commands:
+
+System Information and Management:
+
+1. Get-Process: Lists running processes.
+Get-Process
+
+2. Get-Service: Lists services and their statuses.
+Get-Service
+
+3. Restart-Computer: Restarts the computer.
+Restart-Computer
+
+4. Get-EventLog: Retrieves event logs.
+Get-EventLog -LogName System
+
+File and Directory Operations:
+
+1. Get-ChildItem: Lists files and directories (similar to dir or ls).
+Get-ChildItem -Path C:\Users
+
+2. Copy-Item: Copies files and directories.
+Copy-Item -Path C:\source\file.txt -Destination C:\dest
+
+Move-Item: Moves files and directories.
+Move-Item -Path C:\source\file.txt -Destination C:\dest
+
+Remove-Item: Deletes files or directories.
+Remove-Item -Path C:\dest\file.txt
+
+User and Group Management:
+
+1. Get-LocalUser: Lists local users.
+Get-LocalUser
+
+2. New-LocalUser: Creates a new local user.
+New-LocalUser -Name "NewUser" -Password (ConvertTo-SecureString "password123" -AsPlainText -Force)
+
+Networking:
+
+1. Test-Connection: Pings a device to test connectivity.
+Test-Connection -ComputerName google.com
+
+2. Get-NetIPAddress: Lists IP addresses configured on the system.
+Get-NetIPAddress
+
+System Configuration:
+
+1. Set-ExecutionPolicy: Sets script execution policy.
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned
+
+2. Get-ComputerInfo: Retrieves detailed system information.
+Get-ComputerInfo
+
+Scripting and Automation:
+
+1. Start-Sleep: Pauses execution for a specified time.
+Start-Sleep -Seconds 10
+
+2. Invoke-WebRequest: Downloads content from a web URL.
+Invoke-WebRequest -Uri "https://example.com" -OutFile "example.html"
